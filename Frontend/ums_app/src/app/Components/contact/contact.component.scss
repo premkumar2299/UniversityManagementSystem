@@ -1,0 +1,52 @@
+.flex-container
+{
+    display: flex;
+    background-size: cover;
+    background-image: url('/assets/background.jpg');
+    padding-top: 60px;
+    justify-content: center;
+   
+}
+.flex-container > div {
+    background-color: rgb(209, 209, 214);
+    opacity: 70%;
+    color: white;
+    margin: 40px;
+    width: 500px;
+    min-height: 450px;
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: black 4px 4px 4px 0px;
+    
+  }
+  .t1
+  {
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    
+  }
+
+  .img1 
+  {
+    height:80px;
+    width: 80px;
+    object-fit:contain;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .p1{
+
+    color:black;
+    font-size:25px;
+    padding-top: 25px;
+    padding-left: 50px;
+  }
+  
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }

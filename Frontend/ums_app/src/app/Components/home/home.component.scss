@@ -1,0 +1,19 @@
+.bg {
+padding-left: 0px;
+padding-right: 0px;
+background-size: cover;
+  
+
+  content: url("/assets/third.jpg");
+}
+.modal-dialog {
+  margin-top: 10%;
+  margin-right: 350px;
+}
+.col{
+  text-overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+ // flex-basis: 30px;
+}

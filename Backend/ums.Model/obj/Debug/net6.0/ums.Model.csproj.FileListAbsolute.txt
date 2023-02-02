@@ -1,0 +1,12 @@
+C:\.Net Projects\UniversityApp\ums.Model\bin\Debug\net6.0\ums.Model.deps.json
+C:\.Net Projects\UniversityApp\ums.Model\bin\Debug\net6.0\ums.Model.dll
+C:\.Net Projects\UniversityApp\ums.Model\bin\Debug\net6.0\ums.Model.pdb
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\ums.Model.csproj.AssemblyReference.cache
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\ums.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\ums.Model.AssemblyInfoInputs.cache
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\ums.Model.AssemblyInfo.cs
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\ums.Model.csproj.CoreCompileInputs.cache
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\ums.Model.dll
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\refint\ums.Model.dll
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\ums.Model.pdb
+C:\.Net Projects\UniversityApp\ums.Model\obj\Debug\net6.0\ref\ums.Model.dll

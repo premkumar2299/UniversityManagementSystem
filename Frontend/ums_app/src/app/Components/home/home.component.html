@@ -1,0 +1,349 @@
+<div class="container-fluid">
+  <div class="row">
+    <div id="leftsidebar" class="col-lg-2 col-sm-12 bg-dark cls">
+      <div class="row menuitem">
+        <div
+          class="col bg-secondary mx-5 my-4 py-2 text-center text-light"
+          id="menulist"
+          (click)="AddStudent()"
+        >
+          Add Student
+        </div>
+      </div>
+      <div class="row menuitem">
+        <div
+          class="col bg-secondary mx-5 my-4 py-2 text-center text-light"
+          id="menulist"
+          (click)="AddFaculty()"
+        >
+          Add Faculty
+        </div>
+      </div>
+      <div class="row menuitem">
+        <div
+          class="col bg-secondary mx-5 my-4 py-2 text-center text-light"
+          id="menulist"
+          routerLink="/student-list"
+        >
+          Student-List
+        </div>
+      </div>
+      <div class="row menuitem">
+        <div
+          class="col bg-secondary mx-5 my-4 py-2 text-center text-light"
+          id="menulist"
+          routerLink="/faculty-list"
+        >
+          Faculty-List
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCORDION BEGINS -->
+    <!-- <div class="accordion col-lg-2 col-sm-12" id="accordionExample">
+      <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                University Menu
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div id="leftsidebar" class="col-lg-2 col-sm-12 bg-dark cls">
+                  <div class="row menuitem">
+                    <div
+                      class="col bg-secondary mx-5 my-4 py-2 text-center text-light"
+                      id="menulist"
+                      (click)="AddStudent()"
+                    >
+                      Add Student
+                    </div>
+                  </div>
+                  <div class="row menuitem">
+                    <div
+                      class="col bg-secondary mx-5 my-4 py-2 text-center text-light"
+                      id="menulist"
+                      (click)="AddFaculty()"
+                    >
+                      Add Faculty
+                    </div>
+                  </div>
+                  <div class="row menuitem">
+                    <div
+                      class="col bg-secondary mx-5 my-4 py-2 text-center text-light"
+                      id="menulist"
+                      routerLink="/student-list"
+                    >
+                      Student-List
+                    </div>
+                  </div>
+                  <div class="row menuitem">
+                    <div
+                      class="col bg-secondary mx-5 my-4 py-2 text-center text-light"
+                      id="menulist"
+                      routerLink="/faculty-list"
+                    >
+                      Faculty-List
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+    <!-- ACCORDION END -->
+    <div class="col-lg-10 col-sm-12 bg " id="main"></div>
+  </div>
+
+  <div class="modal" id="studentModel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h6 class="modal-title">Add Student details</h6>
+          <button
+            type="button"
+            class="btn btn-default text-white bg-danger"
+            (click)="CloseStudentModel()"
+          >
+            Close
+          </button>
+        </div>
+        <form [formGroup]="Studentform">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <label class="for-label">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Full Name"
+                  formControlName="studName"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Father's Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Father Name"
+                  formControlName="studFname"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Roll.No:</label>
+                <input
+                  type="number"
+                  name="name"
+                  class="form-control"
+                  placeholder=" Enter Roll number"
+                  formControlName="studRoll"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Address:</label>
+                <textarea
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter Address"
+                  formControlName="address"
+                ></textarea>
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Date of Birth:</label>
+                <input
+                  type="date"
+                  name="name"
+                  class="form-control"
+                  formControlName="dob"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Email:</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter Address"
+                  formControlName="email"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Phone:</label>
+                <input
+                  type="Email"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter Moblie"
+                  formControlName="phone"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="for-label">Choose Course:</label>
+                <select name="course" id="course" formControlName="course">
+                  <option value="B.Tech">B.Tech</option>
+                  <option value="Phd">B.Tech</option>
+                  <option value="MCA">MCA</option>
+                  <option value="M.Tech">M.Tech</option>
+                  <option value="MBA">MBA</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="for-label">Choose Branch:</label>
+                <select name="branch" id="branch" formControlName="branch">
+                  <option value="CSE">CSE</option>
+                  <option value="ECE">ECE</option>
+                  <option value="IT">IT</option>
+                  <option value="EEE">EEE</option>
+                  <option value="ME">ME</option>
+                  <option value="CE">CE</option>
+                </select>
+              </div>
+              <button
+                type="button"
+                class="btn btn-default text-white bg-success my-8"
+                (click)="PoststudData()"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="facultyModel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h6 class="modal-title">Add Faculty details</h6>
+          <button
+            type="button"
+            class="btn btn-default text-white bg-danger"
+            (click)="CloseFacultyModel()"
+          >
+            Close
+          </button>
+        </div>
+        <form [formGroup]="Facultyform">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <label class="for-label">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Full Name"
+                  formControlName="facultyName"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Father's Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Father Name"
+                  formControlName="facultyFname"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Employee Id:</label>
+                <input
+                  type="number"
+                  name="name"
+                  class="form-control"
+                  placeholder=" Enter Roll number"
+                  formControlName="empId"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Address:</label>
+                <textarea
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter Address"
+                  formControlName="address"
+                ></textarea>
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Date of Birth:</label>
+                <input
+                  type="date"
+                  name="name"
+                  class="form-control"
+                  formControlName="dob"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Email:</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter Address"
+                  formControlName="email"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="for-label">Phone:</label>
+                <input
+                  type="Email"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter Email"
+                  formControlName="phone"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="for-label">Choose Course:</label>
+                <select name="course" id="course" formControlName="education">
+                  <option value="B.Tech">B.Tech</option>
+                  <option value="Phd">B.Tech</option>
+                  <option value="MCA">MCA</option>
+                  <option value="M.Tech">M.Tech</option>
+                  <option value="MBA">MBA</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="for-label">Choose Branch:</label>
+                <select name="branch" id="branch" formControlName="department">
+                  <option value="CSE">CSE</option>
+                  <option value="ECE">ECE</option>
+                  <option value="IT">IT</option>
+                  <option value="EEE">EEE</option>
+                  <option value="ME">ME</option>
+                  <option value="CE">CE</option>
+                </select>
+              </div>
+              <button
+                type="button"
+                class="btn btn-default text-white bg-success"
+                (click)="PostfacultyData()"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

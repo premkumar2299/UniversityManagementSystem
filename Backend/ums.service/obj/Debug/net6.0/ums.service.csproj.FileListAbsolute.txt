@@ -1,0 +1,17 @@
+C:\.Net Projects\UniversityApp\ums.service\bin\Debug\net6.0\ums.service.deps.json
+C:\.Net Projects\UniversityApp\ums.service\bin\Debug\net6.0\ums.service.dll
+C:\.Net Projects\UniversityApp\ums.service\bin\Debug\net6.0\ums.service.pdb
+C:\.Net Projects\UniversityApp\ums.service\bin\Debug\net6.0\ums.Model.dll
+C:\.Net Projects\UniversityApp\ums.service\bin\Debug\net6.0\ums.repository.dll
+C:\.Net Projects\UniversityApp\ums.service\bin\Debug\net6.0\ums.Model.pdb
+C:\.Net Projects\UniversityApp\ums.service\bin\Debug\net6.0\ums.repository.pdb
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ums.service.csproj.AssemblyReference.cache
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ums.service.GeneratedMSBuildEditorConfig.editorconfig
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ums.service.AssemblyInfoInputs.cache
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ums.service.AssemblyInfo.cs
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ums.service.csproj.CoreCompileInputs.cache
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ums.service.csproj.CopyComplete
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ums.service.dll
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\refint\ums.service.dll
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ums.service.pdb
+C:\.Net Projects\UniversityApp\ums.service\obj\Debug\net6.0\ref\ums.service.dll
